@@ -11,3 +11,54 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#drum-machine{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height: 100vh;
+  background: rgb(0,0,0,0.5);
+  z-index:1;
+}
+
+#display{
+  position: absolute;
+  top:30%;
+  left:40%;
+  width:190px;
+  height:190px;
+  display:grid;
+  background:white;
+  grid-template-columns: 60px 60px 60px;
+  grid-template-rows: 60px 60px 60px;
+  grid-gap: 5px;
+  padding:5px;
+  border-radius: 10px;
+  
+}
+.drum-pad{
+  display:flex;
+  border: solid 1px black;
+  justify-content: center;
+  align-items: center;
+  border-radius:3px;
+  margin: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  color:blue;
+
+}
+.drum-pad:active {
+ background: rgba(250, 150, 193, 0.25) ;
+}
+.song{
+  position: relative;
+  top:55%;
+  left:40%;
+  color: rgb(232, 47, 158);
+  background-color: white;
+  width:200px;
+  border-radius: 3px;
+  text-align: center;
+}
+
